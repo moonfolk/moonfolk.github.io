@@ -650,14 +650,13 @@
 			}
 
 		.image.squared {
-			  float:left;
-        width:175px;     
-        height:175px;    
-        overflow:hidden; 
+			width:250px;     
+			height:250px;    
+			overflow:hidden; 
 		}
 
 			.image.squared img {
-				width:175px;
+				width:250px;
         height: auto;
 			}
 			
