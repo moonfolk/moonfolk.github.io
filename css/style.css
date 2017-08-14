@@ -649,6 +649,18 @@
 				width: 100%;
 			}
 
+		.image.squared {
+			  float:left;
+        width:175px;     
+        height:175px;    
+        overflow:hidden; 
+		}
+
+			.image.squared img {
+				width:175px;
+        height: auto;
+			}
+			
 		.image.rounded {
 			border-radius: 100%;
 		}
