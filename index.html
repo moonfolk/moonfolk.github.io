@@ -75,7 +75,6 @@
 					</header>
 				</div>
 				<div class="6u$ 12u$(medium)">
-				<p><font size="30"> Website under construction :) </font></p>
 				<p>I am a 5th year PhD student in Statistics at the University of Michigan, advised by <a href="http://dept.stat.lsa.umich.edu/~xuanlong/" target ="_blank">Prof. Long Nguyen </a>. I received my bachelor degree in applied mathematics and physics from Moscow Institure of Physics and Technology. I enjoy switching topics of my research, which helps me to build broad expertise of Machine learning and be able to answer a question "here is my data, what do I do?" for wide range of data types and problems. At the moment I am interning at Adobe on bringing some statistical elements into Deep Learning. For detailed description of my current and past work please check out my <a href="/#two" target ="_blank">Research page</a>. I am interested in Research Scientist type position after complementing my PhD, in a company where I can find challenging problems to apply my problem solving and machine learning skills, while continuing to learn and do research.</p>
 				</div>
 			</div>
@@ -87,7 +86,7 @@
 	<section id="two" class="wrapper style2 special">
 		<div class="container 50%">
 			<h2>Research</h2>
-			<p>This summer for my internship at Adobe I decided to explore a recently very popular topic - Deep Learning. Fascinated by success of Convolutional Neural Networks in image domain, I started thinking what is special about images and how can CNN's success be broadcasted onto other data types. Majority of the data types can be thought of as a graph and image is just a special type of graph. I learned about several works about CNNs on graphs and explored some of the graph signal processing literature, which led me to new DL architecture, where graph representation of the data is learned as part of the neural network. I'm planning to submit this work to ICLR 2018.</p>
+			<p>This summer for my internship at Adobe (supervised by Hung Bui) I decided to explore a recently very popular topic - Deep Learning. Fascinated by success of Convolutional Neural Networks in image domain, I started thinking what is special about images and how can CNN's success be broadcasted onto other data types. Majority of the data types can be thought of as a graph and image is just a special type of graph. I learned about several works about CNNs on graphs and explored some of the graph signal processing literature, which led me to new DL architecture, where graph representation of the data is learned as part of the neural network. I'm planning to submit this work to ICLR 2018.</p>
 
 <p>I'm working jointly with <a href="http://www-personal.umich.edu/~minhnhat/" target ="_blank"> Nhat Ho </a> on finding interesting applications of Wasserstein distance and barycenters. While these are very elegant methematical tools, I believe that we have not yet found a lot of important use cases and fully understood the meaning of barycenter. We published a paper in ICML 2017 about using Wasserstein distances for clustering data with multilevel structure. I was responsible for implementation and simulations design. Code is available on <a href="https://github.com/moonfolk/Multilevel-Wasserstein-Means" target ="_blank"> my Github page </a>. </p>
 			<header>
@@ -95,8 +94,10 @@
 			</header>
 			<p>Ho N., Nguyen X., <span style="font-weight: bold">Yurochkin M.</span>, Bui H., Huynh V. & Phung D. [<a href='https://arxiv.org/abs/1706.03883'>Link</a>, <a
 								href="https://arxiv.org/pdf/1706.03883.pdf">PDF (arXiv)</a>]</p>
-			
-						My initial research topic was Topic Modeling and Latent Dirichlet Allocation infernce. Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can also estimate number of topics, i.e. vertices in the simplex. During my summer 2016 internship at LogicBlox I was working on Factorization Machines and proposed a new Bayesian model for learning high order interactions among variables in the data.
+<p>During summer 2016 internship at LogicBlox (supervised by Nikolaos Vasiloglou) I was working on Factorization Machines and proposed a new Bayesian model for learning high order interactions among variables in the data. The key idea is to represent interactions between variables as a hypergraph, which in turn has corresponding incidence matrix. Incidence matrix is binary and I utilized Indian Buffet Process as a prior on it, additionally proposing a new modification of the IBP to better model interactions. Factorization Machines construction came in handy to be able to estimate coefficients of previously unseen interactions on the fly. This work is currently under review at NIPS 2017. Stay tuned for updates on September 4th :) </p>
+
+
+<p>My initial research topic was Topic Modeling and Latent Dirichlet Allocation infernce. Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can also estimate number of topics, i.e. vertices in the simplex. </p>
 <!--
 			<header>
 				<h4>Graph Convolutional Matrix Completion</h4>
