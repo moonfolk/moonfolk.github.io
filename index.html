@@ -33,29 +33,25 @@
 
 	<!-- Header -->
 	<header id="header">
-<!--
 		<ul class="icons">
+<!--
 			<li>
 				<a href="https://scholar.google.nl/citations?user=83HL5FwAAAAJ&hl=en" class="icon fa-graduation-cap"></a>
 			</li>
+-->
 			<li>
 				<a href="https://github.com/tkipf" class="icon fa-github"></a>
 			</li>
 			<li>
-				<a href="https://twitter.com/thomaskipf" class="icon fa-twitter"></a>
-			</li>
-			<li>
-				<a href="https://www.linkedin.com/in/thomas-kipf-6b260410a" class="icon fa-linkedin"></a>
+				<a href="https://www.linkedin.com/in/mikhail-yurochkin-a45659114/" class="icon fa-linkedin"></a>
 			</li>
 		</ul>
--->
 		<nav id="nav">
 			<ul>
 				<li><a href="/" class="active">Home</a></li>
 				<li><a href="/#two">Research</a></li>
 				<li><a href="/MY_CV.pdf">CV</a></li>
 				<li><a href="/#footer">Contact</a></li>
-				<li><a href="/#play">Stuff</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -86,7 +82,7 @@
 	<section id="two" class="wrapper style2">
 		<div class="container 50%">
 			<h2>Research</h2>
-
+<p><b>Current topics of my research:</b> Deep Learning on graph structured data, applications of Wasserstein distance and barycenters, scalable MCMC, Reinforcement learning (in plan). <b>News:</p> two papers under review at NIPS 2017. Revieweres seem positive - waiting for September 4th :) </p>
 <hr />
 			<p>This summer for my internship at Adobe (supervised by Hung Bui) I decided to explore a recently very popular topic - Deep Learning. Fascinated by success of Convolutional Neural Networks in image domain, I started thinking what is special about images and how can CNN's success be broadcasted onto other data types. Majority of the data types can be thought of as a graph and image is just a special type of graph. I learned about several works about CNNs on graphs and explored some of the graph signal processing literature, which led me to new DL architecture, where graph representation of the data is learned as part of the neural network. I'm planning to submit this work to ICLR 2018.</p>
 <hr />
@@ -101,55 +97,15 @@
 <p>During summer 2016 internship at LogicBlox (supervised by Nikolaos Vasiloglou) I was working on Factorization Machines and proposed a new Bayesian model for learning high order interactions among variables in the data. The key idea is to represent interactions between variables as a hypergraph, which in turn has corresponding incidence matrix. Incidence matrix is binary and I utilized Indian Buffet Process as a prior on it, additionally proposing a new modification of the IBP to better model interactions. Factorization Machines construction came in handy to be able to estimate coefficients of previously unseen interactions on the fly. This work is currently under review at NIPS 2017. Stay tuned for updates on September 4th :) </p>
 <hr />
 
-<p>My initial research topic was Topic Modeling and Latent Dirichlet Allocation infernce. Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can estimate number of topics, i.e. vertices in the simplex. First algorithm is called Geometric Dirichlet Means and consists of k-means clustering step with a computationally cheap geometric post processing of inferred cluster centroids.</p>
+<p>My initial research topic was Topic Modeling and Latent Dirichlet Allocation infernce. Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can estimate number of topics, i.e. vertices in the simplex. First algorithm consists of k-means clustering step with a computationally cheap geometric post processing of inferred cluster centroids.</p>
 			<header>
 				<h4>Geometric Dirichlet Means algorithm for topic inference</h4>
 			</header>
 			<p><span style="font-weight: bold">Yurochkin M.</span> & Nguyen X. [<a href='http://papers.nips.cc/paper/6332-geometric-dirichlet-means-algorithm-for-topic-inference'>Link</a>, <a
 								href="https://arxiv.org/pdf/1610.09034.pdf">PDF (arXiv)</a>]</p>
-<p> Second algorithm is joint work with Aritra Guha. By defining a cone hanging at the center of the data and scanning the space of documents we can both find the topics and estimate their number very accurately. This work is currently under review at NIPS 2017.
+<p> Second algorithm is joint work with Aritra Guha. By defining a cone hanging at the center of the data and scanning the space of documents using the cone we can both find the topics and estimate their number very accurately. This work is currently under review at NIPS 2017.</p>
 <hr />
-<!--
-			<header>
-				<h4>Graph Convolutional Matrix Completion</h4>
-				<p>Collaborative filtering with side information in bipartite graphs</p>
-			</header>
-			<p>R. vd Berg, <span style="font-weight: bold">T. N. Kipf</span>, M. Welling, <span style="font-weight: bold">Graph Convolutional Matrix Completion</span>, arXiv:1706.02263 (2017) [<a href='https://arxiv.org/abs/1706.02263'>Link</a>, <a
-								href="https://arxiv.org/pdf/1706.02263.pdf">PDF (arXiv)</a>]</p>
-			<hr />
-			<header>
-				<h4>Modeling Relational Data with Graph Convolutional Networks</h4>
-				<p>Link prediction and entity classification on knowledge graphs</p>
-			</header>
-			<p>M. Schlichtkrull*, <span style="font-weight: bold">T. N. Kipf*</span>, P. Bloem, R. vd Berg, I. Titov, M. Welling, <span style="font-weight: bold">Modeling Relational Data with Graph Convolutional Networks</span>, arXiv:1703.06103 (2017) [<a href='https://arxiv.org/abs/1703.06103'>Link</a>, <a
-								href="https://arxiv.org/pdf/1703.06103.pdf">PDF (arXiv)</a>], *equal contribution.</p>
-			<hr />
-			<header>
-				<h4>Semi-Supervised Classification with Graph Convolutional Networks</h4>
-				<p>Neural networks for node classification on graphs</p>
-			</header>
-			<p><span style="font-weight: bold">T. N. Kipf</span>, M. Welling, <span style="font-weight: bold">Semi-Supervised Classification with Graph Convolutional Networks</span> (ICLR 2017) [<a href='http://arxiv.org/abs/1609.02907'>Link</a>, <a
-								href="https://arxiv.org/pdf/1609.02907.pdf">PDF (arXiv)</a>, <a href="https://github.com/tkipf/gcn">code</a>, <a href="http://tkipf.github.io/graph-convolutional-networks/">blog</a>]</p>
-			<hr />
-			<header>
-				<h4>Variational Graph Auto-Encoders</h4>
-				<p>A latent variable model for graph-structured data</p>
-			</header>
-			<p><span style="font-weight: bold">T. N. Kipf</span>, M. Welling, <span style="font-weight: bold">Variational Graph Auto-Encoders</span>, (NIPS Bayesian Deep Learning Workshop 2016) [<a href='https://arxiv.org/abs/1611.07308'>Link</a>, <a href="http://arxiv.org/pdf/1611.07308v1.pdf">PDF (arXiv)</a>]</p>
-			<hr />
-			<header>
-				<h4>Recurrent Neural Networks for Graph-Based 3D Agglomeration</h4>
-				<p>M.Sc. thesis (2016), Department of Connectomics, MPI for Brain Research</p>
-			</header>
-			<p>Thesis copy available here: [<a href="http://tkipf.github.io/misc/MScThesis_ThomasKipf.pdf">PDF (9 MB)</a>]</p>
-			<hr />
-			<header>
-				<h4>Collective Effects in Multimode Quantum Optomechanics</h4>
-				<p>Research project in Theoretical Quantum Optics group at OSU</p>
-			</header>
-			<p><span style="font-weight: bold">T. Kipf</span>, G. S. Agarwal, <span style="font-weight: bold">Superradiance and collective gain in multimode optomechanics</span>, Phys. Rev. A 90, 053808 (2014) [<a href='http://journals.aps.org/pra/abstract/10.1103/PhysRevA.90.053808'>Link</a>,
-				<a href="https://arxiv.org/pdf/1409.7226.pdf">PDF (arXiv)</a>]</p>
-!-->
+<p><b>Reviewer experience.</b> Invited reviewer for NIPS 2017 and ICML 2017. Volunteer reviewer for NIPS 2016. Reviewed for Journal of Computational and Graphical Statistics 2016.</p>
 		</div>
 	</section>
 
@@ -170,7 +126,7 @@
 	<footer id="footer">
 		<div class="container">
 			<h2>Get in touch</h2>
-			<p><span style="font-weight: bold">moonfolk [AT] umich [DOT] edu</span><br /> TEXT<br /> ADDRESS </p>
+			<p><span style="font-weight: bold">moonfolk [AT] umich [DOT] edu</span><br /> Department of Statistics, University of Michigan <br /> West Hall, 1085 S University Ave, Ann Arbor, MI 48109 </p>
 			<p></p>
 			<ul class="icons">
 <!--
@@ -181,14 +137,10 @@
 				<li>
 					<a href="https://github.com/moonfolk" class="icon fa-github"></a>
 				</li>
-<!--
+
 				<li>
-					<a href="https://twitter.com/thomaskipf" class="icon fa-twitter"></a>
+					<a href="https://www.linkedin.com/in/mikhail-yurochkin-a45659114/" class="icon fa-linkedin"></a>
 				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/thomas-kipf-6b260410a" class="icon fa-linkedin"></a>
-				</li>
-!-->
 			</ul>
 			<ul class="copyright">
 				<li>&copy; 2017 Mikhail Yurochkin </li>
