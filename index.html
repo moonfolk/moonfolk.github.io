@@ -52,7 +52,7 @@
 		<nav id="nav">
 			<ul>
 				<li><a href="/" class="active">Home</a></li>
-				<li><a href="/#two">Publications</a></li>
+				<li><a href="/#two">Research</a></li>
 				<li><a href="/MY_CV.pdf">CV</a></li>
 				<li><a href="/#footer">Contact</a></li>
 				<li><a href="/#play">Stuff</a></li>
@@ -76,15 +76,7 @@
 				</div>
 				<div class="6u$ 12u$(medium)">
 				<p><font size="30"> Website under construction :) </font></p>
-<!--
-					<p>I am a second-year PhD student in Deep Learning for Network Analysis at the University of Amsterdam, supervised by <a href="https://staff.fnwi.uva.nl/m.welling/" target="_blank">Prof. Max Welling</a>. My main area of interest is large-scale inference
-						for structured data and semi-supervised learning. I am also interested in reasoning and multi-agent reinforcement learning.</p>
-
-					<p>My formal background is in Physics (M.Sc. hons. 2016, B.Sc. 2014 at <a href="https://www.fau.eu/" target="_blank">FAU</a>). During my studies, I have had exposure to a number of fields and&mdash;after a short interlude in Neuroscience-related research
-						at the <a href="http://brain.mpg.de/research/helmstaedter-department.html" target="_blank">Max Planck Institute for Brain Research</a>&mdash;eventually developed a deep interest in Machine Learning.</p>
---!>
-
-
+				I am a 5th year PhD student in Statistics at the University of Michigan, advised by <a href="http://dept.stat.lsa.umich.edu/~xuanlong/" target ="_blank">Prof. Long Nguyen </a>. I received my bachelor degree in applied mathematics and physics from Moscow Institure of Physics and Technology. I enjoy switching topics of my research, which helps me to build broad expertise of Machine learning and be able to answer a question "here is my data, what do I do?" for wide range of data types and problems. At the moment I am interning at Adobe on bringing some statistical elements into Deep Learning. For detailed description of my current and past work please check out my <a href="/#two" target ="_blank">Research page</a>. I am interested in Research Scientist type position after complementing my PhD, in a company where I can find challenging problems to apply my problem solving and machine learning skills, while continuing to learn and do research.
 				</div>
 			</div>
 			<!--<p style="text-align: center; font-weight: bold; font-size:120%">For updates on our upcoming paper on Graph Convolutional Neural Networks (joint work with Max Welling), get in touch with me via email (see below)!</p>-->
@@ -94,9 +86,21 @@
 	<!-- Two -->
 	<section id="two" class="wrapper style2 special">
 		<div class="container 50%">
-			<h2>Publications</h2>
+			<h2>Research</h2>
 			<hr />
 			<a href="/#one" class="active">Home</a>
+			This summer for my internship at Adobe I decided to explore a recently very popular topic - Deep Learning. Fascinated by success of Convolutional Neural Networks in image domain, I started thinking what is special about images and how can CNN's success be broadcasted onto other data types. Majority of the data types can be thought of as a graph and image is just a special type of graph. I learned about several works about CNNs on graphs and explored some of the graph signal processing literature, which led me to new DL architecture, where graph representation of the data is learned as part of the neural network. I'm planning to submit this work to ICLR 2018.
+
+I'm working jointly with <a href="http://www-personal.umich.edu/~minhnhat/" target ="_blank"> Nhat Ho </a> on finding interesting applications of Wasserstein distance and barycenters. While these are very elegant methematical tools, I believe that we have not yet found a lot of important use cases and fully understood the meaning of barycenter. We published a paper in ICML 2017 about using Wasserstein distances for clustering data with multilevel structure. I was responsible for implementation and simulations design. Code is available on <a href="https://github.com/moonfolk/Multilevel-Wasserstein-Means" target ="_blank"> my Github page </a>
+
+						<hr />
+			<header>
+				<h4>Multilevel clustering via Wasserstein means</h4>
+			</header>
+			<p>Ho N., Nguyen X., <span style="font-weight: bold">Yurochkin M.</span>, Bui H., Huynh V. & Phung D. [<a href='https://arxiv.org/abs/1706.03883'>Link</a>, <a
+								href="https://arxiv.org/pdf/1706.03883.pdf">PDF (arXiv)</a>]</p>
+			
+						My initial research topic was Topic Modeling and Latent Dirichlet Allocation infernce. Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can also estimate number of topics, i.e. vertices in the simplex. During my summer 2016 internship at LogicBlox I was working on Factorization Machines and proposed a new Bayesian model for learning high order interactions among variables in the data.
 <!--
 			<header>
 				<h4>Graph Convolutional Matrix Completion</h4>
