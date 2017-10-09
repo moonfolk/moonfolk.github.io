@@ -94,29 +94,40 @@
 		<div class="container 50%">
 			<h2>Research</h2>
 <p><b>Current topics of my research:</b> Deep Learning on graph structured data, applications of Wasserstein distance and barycenters, scalable MCMC, Topic Modeling.</p>
-<p><b>News:</b> Two papers accepted at NIPS 2017! Code is on Github and arxiv versions to appear soon. Website is to be updated and I'm planning on writing a short tutorial on Geometric Topic Modeling.</p>
-<hr />
-			<p>This summer for my internship at Adobe (supervised by Hung Bui) I decided to explore a recently very popular topic - Deep Learning. Fascinated by success of Convolutional Neural Networks in image domain, I started thinking what is special about images and how can CNN's success be broadcasted onto other data types. Majority of the data types can be thought of as a graph and image is just a special type of it. I learned about several works on CNNs on graphs and explored some of the graph signal processing literature, which led me to define new DL architecture, where graph representation of the data is learned as part of the neural network. I'm planning to submit this work to ICLR 2018.</p>
+<p><b>News:</b> Two papers accepted at NIPS 2017! Preparing an ICLR 2018 submission based on my work at Adobe this past summer.</p>
 <hr />
 
-<p>I'm working jointly with <a href="http://www-personal.umich.edu/~minhnhat/" target ="_blank">Nhat Ho</a> on finding interesting applications of Wasserstein distance and barycenters. While these are very elegant mathematical tools, I believe that we have not yet found a lot of important use cases and fully understood the meaning of barycenter. We published a paper in ICML 2017 about using Wasserstein distances for clustering data with multilevel structure. I was responsible for implementation and simulations design. Code is available on <a href="https://github.com/moonfolk/Multilevel-Wasserstein-Means" target ="_blank">my Github page</a>. </p>
-			<header>
-				<h4>Multilevel clustering via Wasserstein means</h4>
-			</header>
-			<p>Ho N., Nguyen X., <span style="font-weight: bold">Yurochkin M.</span>, Bui H., Huynh V. & Phung D. [<a href='https://arxiv.org/abs/1706.03883'>Link</a>, <a
-								href="https://arxiv.org/pdf/1706.03883.pdf">PDF (arXiv)</a>]</p>
-<hr />
-<p>During summer 2016 internship at LogicBlox (supervised by Nikolaos Vasiloglou) I was working with Factorization Machines and proposed a new Bayesian model for learning high order interactions among variables in the data. The key idea is to represent interactions between variables as a hypergraph, which in turn has corresponding incidence matrix. Incidence matrix is binary and I utilized Indian Buffet Process as a prior on it, additionally proposing a new modification of the IBP to better model interactions. Factorization Machines construction came in handy to be able to estimate coefficients of previously unseen interactions on the fly. This work is currently under review at NIPS 2017.</p>
-<hr />
-
-<p>My initial research topic was Topic Modeling and Latent Dirichlet Allocation inference. Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can estimate number of topics, i.e. vertices in the simplex. First algorithm consists of k-means clustering step with a computationally cheap geometric post processing of inferred cluster centroids.</p>
+<p>My major research topic is Topic Modeling and Latent Dirichlet Allocation inference. Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can estimate number of topics, i.e. vertices in the simplex. First algorithm consists of k-means clustering step with a computationally cheap geometric post processing of inferred cluster centroids.</p>
 			<header>
 				<h4>Geometric Dirichlet Means algorithm for topic inference</h4>
 			</header>
 			<p><span style="font-weight: bold">Yurochkin M.</span> & Nguyen X. [<a href='http://papers.nips.cc/paper/6332-geometric-dirichlet-means-algorithm-for-topic-inference'>Link</a>, <a
-								href="https://arxiv.org/pdf/1610.09034.pdf">PDF (arXiv)</a>]</p>
-<p> Second algorithm is joint work with Aritra Guha. By defining a cone hanging at the center of the data and scanning the space of documents using this cone we can both find the topics and estimate their number very accurately. This work is currently under review at NIPS 2017.</p>
+								href="https://arxiv.org/pdf/1610.09034.pdf">PDF (arXiv)</a>, <a href='https://github.com/moonfolk/Geometric-Topic-Modeling'>Code</a>]</p>
+<p> Second algorithm is joint work with Aritra Guha. By defining a cone hanging at the center of the data and scanning the space of documents using this cone we can both find the topics and estimate their number very accurately. I will present this work at NIPS 2017.</p>
+			<header>
+				<h4>Conic Scan-and-Cover algorithms for nonparametric topic modeling</h4>
+			</header>
+			<p><span style="font-weight: bold">Yurochkin M.</span>, Guha A. & Nguyen X. [<a href='https://arxiv.org/abs/1709.0930100000'>Link</a>, <a
+								href="https://arxiv.org/pdf/1610.09034000000000.pdf">PDF (arXiv)</a>, <a href='https://github.com/moonfolk/Geometric-Topic-Modeling'>Code</a>]</p>
 <hr />
+
+<p>During summer 2016 internship at LogicBlox (supervised by Nikolaos Vasiloglou) I was working with Factorization Machines and proposed a new Bayesian model for learning high order interactions among variables in the data. The key idea is to represent interactions between variables as a hypergraph, which in turn has corresponding incidence matrix. Incidence matrix is binary and I utilized Indian Buffet Process as a prior on it, additionally proposing a new modification of the IBP to better model interactions. Factorization Machines construction came in handy to be able to estimate coefficients of previously unseen interactions on the fly. I will present this work at NIPS 2017.</p>
+			<header>
+				<h4>Multi-way Interacting Regression via Factorization Machines</h4>
+			</header>
+			<p><span style="font-weight: bold">Yurochkin M.</span>, Nguyen X. & Vasiloglou N. [<a href='https://arxiv.org/abs/1709.09301'>Link</a>, <a
+								href="https://arxiv.org/pdf/1709.09301.pdf">PDF (arXiv)</a>, <a href='https://github.com/moonfolk/MiFM'>Code</a>]</p>
+
+<hr />
+
+<p>I'm working jointly with <a href="http://www-personal.umich.edu/~minhnhat/" target ="_blank">Nhat Ho</a> on finding interesting applications of Wasserstein distance and barycenters. While these are very elegant mathematical tools, I believe that we have not yet found a lot of important use cases and fully understood the meaning of barycenter. We published a paper in ICML 2017 about using Wasserstein distances for clustering data with multilevel structure. I was responsible for implementation and simulations design.</p>
+			<header>
+				<h4>Multilevel clustering via Wasserstein means</h4>
+			</header>
+			<p>Ho N., Nguyen X., <span style="font-weight: bold">Yurochkin M.</span>, Bui H., Huynh V. & Phung D. [<a href='https://arxiv.org/abs/1706.03883'>Link</a>, <a
+								href="https://arxiv.org/pdf/1706.03883.pdf">PDF (arXiv)</a>, <a href='https://github.com/moonfolk/https://github.com/moonfolk/Multilevel-Wasserstein-Means'>Code</a>]</p>
+<hr />
+
 <p><b>Reviewer experience:</b> Invited reviewer for NIPS 2017 and ICML 2017. Volunteer reviewer for NIPS 2016. Reviewed for Journal of Computational and Graphical Statistics 2016.</p>
 		</div>
 	</section>
