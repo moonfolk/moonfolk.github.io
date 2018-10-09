@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title> Mikhail Yurochkin | PhD Candidate, University of Michigan </title>
+	<title> Mikhail Yurochkin | PHD, Statistics </title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Personal webpage of Mikhail Yurochkin" />
 	<meta name="keywords" content="Mikhail Yurochkin" />
@@ -44,11 +44,9 @@
 	<!-- Header -->
 	<header id="header">
 		<ul class="icons">
-<!--
 			<li>
-				<a href="https://scholar.google" class="icon fa-graduation-cap"></a>
+				<a href="https://scholar.google.com/citations?user=QjBF9sUAAAAJ&hl=en&authuser=1" class="icon fa-graduation-cap"></a>
 			</li>
--->
 			<li>
 				<a href="https://github.com/moonfolk" class="icon fa-github"></a>
 			</li>
@@ -60,7 +58,7 @@
 			<ul>
 				<li><a href="" class="active">Home</a></li>
 				<li><a href="#two">Research</a></li>
-				<li><a href="MY_CV.pdf">CV</a></li>
+				<!--<li><a href="MY_CV.pdf">CV</a></li>-->
 				<li><a href="#footer">Contact</a></li>
 			</ul>
 		</nav>
@@ -68,7 +66,7 @@
 
 	<!-- One -->
 	<section id="one" class="wrapper style1">
-		<div class="container 55%">
+		<div class="container 52%">
 			<div class="row 200%">
 				<div class="5.5u 12u$(medium)">
 					<header class="major">
@@ -76,13 +74,11 @@
 						<p>
 							<div class="image " style="margin-bottom: 1.5em;"><img src="images/photo.jpg" width="420" alt="" /></div>
 						</p>
-						<p>PhD candidate</p>
-						<p>University of Michigan</p>
+						<!--<p>PHD, Statistics</p>-->
 					</header>
 				</div>
-				<div class="6u$ 12u$(medium)">
-				<p style="font-size:140%; margin-top:2.3cm">I am a 5th year PhD student in Statistics at the University of Michigan, advised by <a href="http://dept.stat.lsa.umich.edu/~xuanlong/" target ="_blank">Prof. Long Nguyen</a>. I received my bachelor degree in applied mathematics and physics from Moscow Institute of Physics and Technology. I enjoy switching topics of my research, which helps me to build broad expertise of Machine learning and be able to answer a question "here is my data, what do I do?" for wide range of data types and problems. For detailed description of my current and past work please see the <a href="#two">Research section</a>. I am interested in Research Scientist type position after completing my PhD.
-<!-- I want to join a company where I can apply my problem-solving and machine learning skills, while continuing to learn and do research.</p> -->
+				<div class="5u$ 12u$(medium)">
+				<p style="font-size:140%; margin-top:4.3cm;">I am working as Research Staff Member at IBM Research AI in Cambridge. Before, I have completed PhD in Statistics at the University of Michigan, advised by <a href="http://dept.stat.lsa.umich.edu/~xuanlong/" target ="_blank">Prof. Long Nguyen</a>. I received my bachelor degree in applied mathematics and physics from Moscow Institute of Physics and Technology.
 				</div>
 			</div>
 			<!--<p style="text-align: center; font-weight: bold; font-size:120%"> text </p>-->
@@ -93,17 +89,17 @@
 	<section id="two" class="wrapper style2">
 		<div class="container 50%">
 			<h2>Research</h2>
-<p><b>Current topics of my research:</b> Deep Learning on graph structured data, applications of Wasserstein distance and barycenters, scalable MCMC, Topic Modeling.</p>
-<p><b>News:</b> Two papers accepted at NIPS 2017! Submitted a paper to ICLR 2018 based on my work at Adobe this past summer.</p>
+<p><b>Current topics of my research:</b> Bayesian (nonparametric) modeling, Scalable Bayesian inference, Algorithmic convex geometry, Graph signal processing</p>
+<p><b>News:</b> Multiple papers submitted to AAAI, ICLR, AISTATS. Stay tuned for updates!</p>
 <hr />
 
-<p>My major research topic is Topic Modeling and Latent Dirichlet Allocation inference. Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can estimate number of topics, i.e. vertices in the simplex. First algorithm consists of k-means clustering step with a computationally cheap geometric post processing of inferred cluster centroids.</p>
+<p>Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can estimate number of topics, i.e. vertices in the simplex. First algorithm consists of k-means clustering step with a computationally cheap geometric post processing of inferred cluster centroids. This work was presented at NIPS 2016.</p>
 			<header>
 				<h4>Geometric Dirichlet Means algorithm for topic inference</h4>
 			</header>
 			<p><span style="font-weight: bold">Yurochkin M.</span> & Nguyen X. [<a href='http://papers.nips.cc/paper/6332-geometric-dirichlet-means-algorithm-for-topic-inference'>Link</a>, <a
 								href="https://arxiv.org/pdf/1610.09034.pdf">PDF (arXiv)</a>, <a href='https://github.com/moonfolk/Geometric-Topic-Modeling'>Code</a>]</p>
-<p> Second algorithm is joint work with Aritra Guha. By defining a cone hanging at the center of the data and scanning the space of documents using this cone we can both find the topics and estimate their number very accurately. I will present this work at NIPS 2017.</p>
+<p> Second algorithm is joint work with Aritra Guha. By defining a cone hanging at the center of the data and scanning the space of documents using this cone we can both find the topics and estimate their number very accurately. This work was presented at NIPS 2017.</p>
 			<header>
 				<h4>Conic Scan-and-Cover algorithms for nonparametric topic modeling</h4>
 			</header>
@@ -112,7 +108,7 @@
 				<a href='CoSAC_poster.pdf'>NIPS poster</a>]</p>
 <hr />
 
-<p>During summer 2016 internship at LogicBlox (supervised by Nikolaos Vasiloglou) I was working with Factorization Machines and proposed a new Bayesian model for learning high order interactions among variables in the data. The key idea is to represent interactions between variables as a hypergraph, which in turn has corresponding incidence matrix. Incidence matrix is binary and I utilized Indian Buffet Process as a prior on it, additionally proposing a new modification of the IBP to better model interactions. Factorization Machines construction came in handy to be able to estimate coefficients of previously unseen interactions on the fly. I will present this work at NIPS 2017.</p>
+<p>During summer 2016 internship at LogicBlox (supervised by Nikolaos Vasiloglou) I was working with Factorization Machines and proposed a new Bayesian model for learning high order interactions among variables in the data. The key idea is to represent interactions between variables as a hypergraph, which in turn has corresponding incidence matrix. Incidence matrix is binary and I utilized Indian Buffet Process as a prior on it, additionally proposing a new modification of the IBP to better model interactions. Factorization Machines construction came in handy to be able to estimate coefficients of previously unseen interactions on the fly. This work was presented at NIPS 2017.</p>
 			<header>
 				<h4>Multi-way Interacting Regression via Factorization Machines</h4>
 			</header>
@@ -130,35 +126,35 @@
 								href="https://arxiv.org/pdf/1706.03883.pdf">PDF (arXiv)</a>, <a href='https://github.com/moonfolk/https://github.com/moonfolk/Multilevel-Wasserstein-Means'>Code</a>]</p>
 <hr />
 
-<p><b>Reviewer experience:</b> Invited reviewer for ICLR 2018, NIPS 2017 and ICML 2017. Volunteer reviewer for NIPS 2016. Reviewed for Journal of Computational and Graphical Statistics 2016.</p>
+<p><b>Program Committee member:</b> ICLR 2018, 2019; NIPS 2017, 2018 (top 30% reviewer award); ICML 2017, 2018.</p>
 		</div>
 	</section>
 
 
-	<!-- Three -->
+	<!-- Three
 	<section id="three" class="wrapper style3 special">
 		<div class="container 50%">
 
-			<h2>Curriculum vitae</h2>
+			<h2>Contact me for up-to-date CV</h2>
 			<ul class="actions">
 				<li><a href="MY_CV.pdf" class="button alt big">Download CV</a></li>
 			</ul>
 		</div>
-	</section>
-
+	</section>-->
 
 	<!-- Footer -->
 	<footer id="footer">
 		<div class="container">
 			<h2>Get in touch</h2>
-			<p><span style="font-weight: bold">moonfolk [AT] umich [DOT] edu</span><br /> Department of Statistics, University of Michigan <br /> West Hall, 1085 S University Ave, Ann Arbor, MI 48109 </p>
+			<p><span style="font-weight: bold">moonfolk [AT] umich [DOT] edu</span><br /> 
+<!-- Department of Statistics, University of Michigan <br /> West Hall, 1085 S University Ave, Ann Arbor, MI 48109 </p> -->
 			<p></p>
 			<ul class="icons">
-<!--
+
 				<li>
-					<a href="https://scholar.google" class="icon fa-graduation-cap"></a>
+					<a href="https://scholar.google.com/citations?user=QjBF9sUAAAAJ&hl=en&authuser=1" class="icon fa-graduation-cap"></a>
 				</li>
-!-->
+
 				<li>
 					<a href="https://github.com/moonfolk" class="icon fa-github"></a>
 				</li>
