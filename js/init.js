@@ -81,8 +81,8 @@
 			});
 
 		// Touch mode.
-		//	if (skel.vars.isMobile)
-		//		$body.addClass('is-touch');
+			if (skel.vars.isMobile)
+				$body.addClass('is-touch');
 
 	});
 
