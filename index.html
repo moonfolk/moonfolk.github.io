@@ -58,7 +58,7 @@
 			<ul>
 				<li><a href="" class="active">Home</a></li>
 				<li><a href="#two">Publications</a></li>
-				<!--<li><a href="MY_CV.pdf">CV</a></li>-->
+				<li><a href="files/CV_MY.pdf">CV</a></li>
 				<li><a href="#footer">Contact</a></li>
 			</ul>
 		</nav>
@@ -79,11 +79,11 @@
 				</div>
 				<div class="7u$ 5u$(medium)">
 				<font size="5"><p <br><br><br><br>
-I am a Research Staff Member at IBM Research in Cambridge, Massachusetts. My research interests are
+I am a Research Staff Member at IBM Research and MIT-IBM Watson AI Lab in Cambridge, Massachusetts. My research interests are
 </p>
 <ul>
-<li>Model fusion and federated learning</li>
 <li>Algorithmic fairness</li>
+<li>Model fusion and federated learning</li>
 <li>Applications of optimal transport in machine learning</li>
 <li>Bayesian (nonparametric) modeling and inference</li>
 </ul>
@@ -93,17 +93,396 @@ I am a Research Staff Member at IBM Research in Cambridge, Massachusetts. My res
 			</div>
 			<!--<p style="text-align: center; font-weight: bold; font-size:120%"> text </p>-->
 		</div>
+    </section>
+
+<section id="news" class="wrapper style2">
+<div class="container 75%">
+			<h3 style="text-align: center">News</h3>
+			<ul>
+				<li>10/2021: I will be giving an invited talk on Individual Fairness at <a href="https://odsc.com/california/">ODSC West</a>.</li>
+				<li>10/2021: Three papers accepted at NeurIPS 2021.</li>
+				<li>08/2021: I gave a keynote talk on Algorithmic Fairness at <a href="https://sites.google.com/view/kdd-mlf-2021/home">KDD Workshop on Machine Learning in Finance</a>.</li>
+				<li>06/2021: I gave invited talks on Federatel Learning at <a href="https://odsc.com/europe/">ODSC Europe</a> and <a href="https://federatedlearningconference.com/">The 2nd Annual Federated and Distributed/Decentralized Machine Learning Conference</a>.</li>
+				<li>05/2021: I was an invited panelist at the <a href="https://hubsecurity.io/watch-now-federated-learning-ai-data-security-summit/">Federated Learning, AI & Data Security Summit</a> organized by <a href="https://hubsecurity.io/">HUB Security</a> (<a href="https://www.youtube.com/watch?v=PL39scRsxvE">video here</a>).</li>
+                <li>05/2021: I am honored to receive IBM's Outstanding Technical Achievement Award.</li>
+                <li>05/2021: One paper accepted at ICML 2021.</li>
+                <li>05/2021: IBM <a href="https://research.ibm.com/blog/make-ai-fairer">blog post</a> about our work on Individual Fairness. 
+                <li>03/2021: I gave an invited talk on Individual Fairness at the <a href="https://sites.google.com/view/faf-workshop">Foundations of Algorithmic Fairness Workshop</a> (<a href="https://youtu.be/6v-uDp-EkXE?t=5946">video here</a>).</li>
+                <li>01/2021: Four papers accepted at ICLR 2021, including one oral and one spotlight!</li>
+                
+			</ul>
+		</div>
 	</section>
 
 	<!-- Two -->
-	<section id="two" class="wrapper style2">
-		<div class="container 50%">
-			<h2>Publications</h2>
-<p>Publications list is outdated and will be updated soon. </br>
-Please see my <a href='https://scholar.google.com/citations?user=QjBF9sUAAAAJ&hl=en&authuser=1'> Google scholar page</a>.</p>
-
-<hr />
-
+	<section id="two" class="wrapper style1">
+		<div class="container 75%">
+		
+			<h2 style="text-align: center">Publications</h2>
+			
+			<hr />
+            <h2 style="text-align: right">2021</h2>
+            
+            	<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/ot-clustering-jmlr.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://www.jmlr.org/papers/v22/19-782.html">On Efficient Multilevel Clustering via Wasserstein Distances</a></h4>
+					</header>
+					<p>Viet Huynh, Nhat Ho, Nhan Dam, XuanLong Nguyen, Mikhail Yurochkin, Hung Bui, Dinh Phung<br>
+					Journal of Machine Learning Research (JMLR), 2021</span><br>
+					<a href="https://www.jmlr.org/papers/volume22/19-782/19-782.pdf">PDF</a> / <a href="https://github.com/viethhuynh/wasserstein-means">Code</a></p>
+				</div>
+			</div>
+            
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/robot.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2012.07363">Outlier-Robust Optimal Transport</a></h4>
+					</header>
+					<p>Debarghya Mukherjee, Aritra Guha, Justin Solomon, Yuekai Sun, Mikhail Yurochkin<br>
+					International Conference on Machine Learning (ICML), 2021</span><br>
+					<a href="https://arxiv.org/pdf/2012.07363.pdf">arXiv</a> / <a href="https://github.com/debarghya-mukherjee/Robust-Optimal-Transport">Code</a></p>
+				</div>
+			</div>
+						
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/sensei.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2006.14168">SenSeI: Sensitive Set Invariance for Enforcing Individual Fairness</a></h4>
+					</header>
+					<p>Mikhail Yurochkin and Yuekai Sun<br>
+					International Conference on Learning Representations (ICLR), 2021 <span style="font-weight: bold; color: #f24900">(Oral)</span><br>
+					<a href="https://arxiv.org/pdf/2006.14168.pdf">arXiv</a> / <a href="https://openreview.net/forum?id=DktZb97_Fx">Code (see supplementary material)</a> / <a href="https://iclr.cc/virtual/2021/oral/3499">Video</a> / <a href="https://www.research.ibm.com/blog/make-ai-fairer">Blog</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/ranking.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2103.11023">Individually Fair Rankings</a></h4>
+					</header>
+					<p>Amanda Bower, Hamid Eftekhari, Mikhail Yurochkin, Yuekai Sun<br>
+					International Conference on Learning Representations (ICLR), 2021<br>
+					<a href="https://arxiv.org/pdf/2103.11023.pdf">arXiv</a> / <a href="https://openreview.net/forum?id=71zCSP_HuBN">Code (see supplementary material)</a> / <a href="https://iclr.cc/virtual/2021/poster/2627">Video</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/testing2-pic.png" width="170" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2103.16714">Statistical inference for individual fairness</a></h4>
+					</header>
+					<p>Subha Maity, Songkai Xue, Mikhail Yurochkin, Yuekai Sun<br>
+					International Conference on Learning Representations (ICLR), 2021<br>
+					<a href="https://arxiv.org/pdf/2103.16714.pdf">arXiv</a> / <a href="https://openreview.net/forum?id=z9k8BWL-_2u">Code (see supplementary material)</a> / <a href="https://iclr.cc/virtual/2021/poster/2966">Video</a></p>
+				</div>
+			</div>			
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/boosting.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2103.16785">Individually Fair Gradient Boosting</a></h4>
+					</header>
+					<p>Alexander Vargo, Fan Zhang, Mikhail Yurochkin, Yuekai Sun<br>
+					International Conference on Learning Representations (ICLR), 2021 <span style="font-weight: bold; color: #f24900">(Spotlight)</span><br>
+					<a href="https://arxiv.org/pdf/2103.16785.pdf">arXiv</a> / <a href="https://openreview.net/forum?id=JBAa9we1AL">Code (see supplementary material)</a> / <a href="https://iclr.cc/virtual/2021/spotlight/3502">Video</a></p>
+				</div>
+			</div>
+			
+			<hr />
+            <h2 style="text-align: right">2020</h2>
+            
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/cwb.png" width="180" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2008.12534">Continuous Regularized Wasserstein Barycenters</a></h4>
+					</header>
+					<p>Lingxiao Li, Aude Genevay, Mikhail Yurochkin, Justin Solomon<br>
+					Neural Information Processing Systems (NeurIPS), 2020<br>
+					<a href="https://arxiv.org/pdf/2008.12534.pdf">arXiv</a> / <a href="https://github.com/lingxiaoli94/CWB">Code</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/bloans.png" width="180" height="150" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2012.01193">Black Loans Matter: Distributionally Robust Fairness for Fighting Subgroup Discrimination</a></h4>
+					</header>
+					<p>Mark Weber, Mikhail Yurochkin, Sherif Botros, Vanio Markov<br>
+					NeurIPS Fair AI in Finance Workshop, 2020 <span style="font-weight: bold; color: #f24900">(Spotlight Talk)</span><br>
+					<a href="https://arxiv.org/pdf/2012.01193.pdf">arXiv</a> / <a href="https://mitibmwatsonailab.mit.edu/research/blog/black-loans-matter-fighting-bias-for-ai-fairness-in-lending/">Blog</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/kl-fusion.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2007.06168">Model Fusion with Kullback–Leibler Divergence</a></h4>
+					</header>
+					<p>Sebastian Claici, Mikhail Yurochkin, Soumya Ghosh, Justin Solomon<br>
+					International Conference on Machine Learning (ICML), 2020<br>
+					<a href="https://arxiv.org/pdf/2007.06168.pdf">arXiv</a> / <a href="https://github.com/IBM/KL-fusion">Code</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/fair-metric.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2006.11439">Two Simple Ways to Learn Individual Fairness Metric from Data</a></h4>
+					</header>
+					<p>Debarghya Mukherjee, Mikhail Yurochkin, Moulinath Banerjee, Yuekai Sun<br>
+					International Conference on Machine Learning (ICML), 2020<br>
+					<a href="https://arxiv.org/pdf/2006.11439.pdf">arXiv</a> / <a href="https://github.com/debarghya-mukherjee/Fair_metric_learning">Code</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/testing1.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2003.05048">Auditing ML models for individual bias and unfairness</a></h4>
+					</header>
+					<p>Songkai Xue, Mikhail Yurochkin, Yuekai Sun<br>
+					International Conference on Artificial Intelligence and Statistics (AISTATS), 2020<br>
+					<a href="https://arxiv.org/pdf/2003.05048.pdf">arXiv</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/fedma.png" width="180" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2002.06440">Federated Learning with Matched Averaging</a></h4>
+					</header>
+					<p>Hongyi Wang, Mikhail Yurochkin, Yuekai Sun, Dimitris Papailiopoulos, Yasaman Khazaeni<br>
+					International Conference on Learning Representations (ICLR), 2020 <span style="font-weight: bold; color: #f24900">(Oral)</span><br>
+					<a href="https://arxiv.org/pdf/2002.06440.pdf">arXiv</a> / <a href="https://github.com/IBM/FedMA">Code</a> / <a href="https://iclr.cc/virtual_2020/poster_BkluqlSFDS.html">Video</a> / <a href="https://mitibmwatsonailab.mit.edu/research/blog/fedma-layer-wise-federated-learning-with-the-potential-to-fight-ai-bias/">Blog</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/sensr.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1907.00020">Training individually fair ML models with sensitive subspace robustness</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, Amanda Bower, Yuekai Sun<br>
+					International Conference on Learning Representations (ICLR), 2020 <span style="font-weight: bold; color: #f24900">(Spotlight)</span><br>
+					<a href="https://arxiv.org/pdf/1907.00020.pdf">arXiv</a> / <a href="https://github.com/IBM/sensitive-subspace-robustness">Code</a> / <a href="https://iclr.cc/virtual_2020/poster_B1gdkxHFDH.html">Video</a> / <a href="https://mitibmwatsonailab.mit.edu/research/blog/training-individually-fair-ml-models-with-sensitive-subspace-robustness/">Blog</a></p>
+				</div>
+			</div>
+			
+			<hr />
+            <h2 style="text-align: right">2019</h2>
+            
+            	<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/hott.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1906.10827">Hierarchical Optimal Transport for Document Representation</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, Sebastian Claici, Edward Chien, Farzaneh Mirzazadeh, Justin Solomon<br>
+					Neural Information Processing Systems (NeurIPS), 2019<br>
+					<a href="https://arxiv.org/pdf/1906.10827.pdf">arXiv</a> / <a href="https://github.com/IBM/HOTT">Code</a> / <a href="https://mitibmwatsonailab.mit.edu/research/blog/hierarchical-optimal-transport-for-document-representation/">Blog</a> / <a href="https://news.mit.edu/2019/finding-good-read-among-billions-of-choices-1220">MIT News</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/label-switching.png" width="190" height="150" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1911.02053">Alleviating Label Switching with Optimal Transport</a></h4>
+					</header>
+					<p>Pierre Monteiller, Sebastian Claici, Edward Chien, Farzaneh Mirzazadeh, Justin Solomon, Mikhail Yurochkin<br>
+					Neural Information Processing Systems (NeurIPS), 2019<br>
+					<a href="https://arxiv.org/pdf/1911.02053.pdf">arXiv</a> / <a href="https://github.com/pierremon/label-switching">Code</a> / <a href="https://www.ibm.com/blogs/research/2019/12/optimal-transport-for-label-switching/">Blog</a></p>
+				</div>
+			</div>
+            
+            	<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/spahm.png" width="220" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1911.00218">Statistical Model Aggregation via Parameter Matching</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, Mayank Agarwal, Soumya Ghosh, Kristjan Greenewald, Trong Nghia Hoang<br>
+					Neural Information Processing Systems (NeurIPS), 2019<br>
+					<a href="https://arxiv.org/pdf/1911.00218.pdf">arXiv</a> / <a href="https://github.com/IBM/SPAHM">Code</a> / <a href="https://mitibmwatsonailab.mit.edu/research/blog/statistical-model-aggregation-via-parameter-matching/">Blog</a></p>
+				</div>
+			</div>
+            
+            <div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/sddm.png" width="180" height="150" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1809.08738">Scalable inference of topic evolution via models for latent geometric structures</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, Zhiwei Fan, Aritra Guha, Paraschos Koutris, XuanLong Nguyen<br>
+					Neural Information Processing Systems (NeurIPS), 2019<br>
+					<a href="https://arxiv.org/pdf/1809.08738.pdf">arXiv</a> / <a href="https://github.com/moonfolk/SDDM">Code</a> / <a href="https://mitibmwatsonailab.mit.edu/research/blog/scalable-inference-of-topic-evolution-via-models-for-latent-geometric-structures/">Blog</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/vlad.png" width="180" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1905.11009">Dirichlet Simplex Nest and Geometric Inference</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, Aritra Guha, Yuekai Sun, XuanLong Nguyen<br>
+					International Conference on Machine Learning (ICML), 2019 <span style="font-weight: bold; color: #f24900">(Long Talk)</span><br>
+					<a href="https://arxiv.org/pdf/1905.11009.pdf">arXiv</a> / <a href="https://github.com/moonfolk/VLAD">Code</a> / <a href="https://slideslive.com/38917849/bayesian-methods?t=0">Video</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/pfnm-long.png" width="200" height="150" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1905.12022">Bayesian Nonparametric Federated Learning of Neural Networks</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, Mayank Agarwal, Soumya Ghosh, Kristjan Greenewald, Trong Nghia Hoang, Yasaman Khazaeni<br>
+					International Conference on Machine Learning (ICML), 2019<br>
+					<a href="https://arxiv.org/pdf/1905.12022.pdf">arXiv</a> / <a href="https://github.com/IBM/probabilistic-federated-neural-matching">Code</a> / <a href="https://youtube.videoken.com/embed/-COX4Por6H0?tocitem=95">Video</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/gcnucb.png" width="180" height="150" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://openreview.net/forum?id=HkgrQE7luV">Online Semi-Supervised Learning with Bandit Feedback</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, Sohini Upadhyay, Djallel Bouneffouf, Mayank Agarwal, Yasaman Khazaeni<br>
+					ICLR Limited Labeled Data (LLD) Workshop, 2019<br>
+					<a href="https://openreview.net/pdf?id=HkgrQE7luV">PDF</a></p>
+				</div>
+			</div>
+			
+			<hr />
+            <h2 style="text-align: right">2016-2018</h2>
+            
+            <div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/thesis.png" width="190" height="150" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://deepblue.lib.umich.edu/handle/2027.42/146051">Geometric Inference in Bayesian Hierarchical Models with Applications to Topic Modeling</a></h4>
+					</header>
+					<p>Mikhail Yurochkin<br>
+					PhD Thesis, University of Michigan, 2018<br>
+					<a href="https://deepblue.lib.umich.edu/bitstream/handle/2027.42/146051/moonfolk_1.pdf?sequence=1">PDF</a> / <a href="files/MY_slides.pdf">Slides</a> </p>
+				</div>
+			</div>
+            
+            <div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/cosac.png" width="180" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1710.02952">Conic Scan-and-Cover algorithms for nonparametric topic modeling</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, Aritra Guha, XuanLong Nguyen<br>
+					Neural Information Processing Systems (NeurIPS), 2017<br>
+					<a href="https://arxiv.org/pdf/1710.02952.pdf">arXiv</a> / <a href="https://github.com/moonfolk/Geometric-Topic-Modeling">Code</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/mifm.png" width="180" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1709.09301">Multi-way Interacting Regression via Factorization Machines</a></h4>
+					</header>
+					<p>Mikhail Yurochkin, XuanLong Nguyen, Nikolaos Vasiloglou<br>
+					Neural Information Processing Systems (NeurIPS), 2017<br>
+					<a href="https://arxiv.org/pdf/1709.09301.pdf">arXiv</a> / <a href="https://github.com/moonfolk/MiFM">Code</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/ot-clustering.png" width="150" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1706.03883">Multilevel Clustering via Wasserstein Means</a></h4>
+					</header>
+					<p>Nhat Ho, XuanLong Nguyen, Mikhail Yurochkin, Hung Hai Bui, Viet Huynh, Dinh Phung<br>
+					International Conference on Machine Learning (ICML), 2017<br>
+					<a href="https://arxiv.org/pdf/1706.03883.pdf">arXiv</a> / <a href="https://github.com/moonfolk/Multilevel-Wasserstein-Means">Code</a></p>
+				</div>
+			</div>
+			
+			<div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/gdm.png" width="180" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/1610.09034">Geometric Dirichlet Means algorithm for topic inference</a></h4>
+					</header>
+					<p>Mikhail Yurochkin and XuanLong Nguyen<br>
+					Neural Information Processing Systems (NeurIPS), 2016<br>
+					<a href="https://arxiv.org/pdf/1610.09034.pdf">arXiv</a> / <a href="https://github.com/moonfolk/Geometric-Topic-Modeling">Code</a></p>
+				</div>
+			</div>
+			
+<!--			
 <p>Recasting the inference of topics as a geometric learning a simplex type problem allowed for two new algorithms for topic estimation, both are much faster and as accurate as Gibbs sampler, additionally second algorithm can estimate number of topics, i.e. vertices in the simplex. First algorithm consists of k-means clustering step with a computationally cheap geometric post processing of inferred cluster centroids. This work was presented at NIPS 2016.</p>
 			<header>
 				<h4>Geometric Dirichlet Means algorithm for topic inference</h4>
@@ -138,6 +517,9 @@ Please see my <a href='https://scholar.google.com/citations?user=QjBF9sUAAAAJ&hl
 <hr />
 
 <p><b>Program Committee member:</b> ICLR 2018, 2019, 2020; NeurIPS 2017, 2018 (top 30% reviewer award), 2019 (top 50% reviewer award); ICML 2017, 2018, 2019.</p>
+		
+-->
+		
 		</div>
 	</section>
 
@@ -145,7 +527,6 @@ Please see my <a href='https://scholar.google.com/citations?user=QjBF9sUAAAAJ&hl
 	<!-- Three
 	<section id="three" class="wrapper style3 special">
 		<div class="container 50%">
-
 			<h2>Contact me for up-to-date CV</h2>
 			<ul class="actions">
 				<li><a href="MY_CV.pdf" class="button alt big">Download CV</a></li>
@@ -175,7 +556,7 @@ Please see my <a href='https://scholar.google.com/citations?user=QjBF9sUAAAAJ&hl
 				</li>
 			</ul>
 			<ul class="copyright">
-				<li>&copy; 2019 Mikhail Yurochkin </li>
+				<li>&copy; 2021 Mikhail Yurochkin </li>
 				<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
 			</ul>
 		</div>
