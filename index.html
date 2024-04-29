@@ -106,6 +106,8 @@ I have also worked on OOD generalization, Algorithmic Fairness, Optimal Transpor
 <div class="container 75%">
 			<h3 style="text-align: center">News</h3>
 			<ul>
+    			<li>02/2024: <a href="https://arxiv.org/abs/2402.14992">tinyBenchmarks</a> are now on <a href="https://huggingface.co/tinyBenchmarks">HuggingFace</a>! Evaluate on MMLU (and others) with just 100 examples.</li>
+    			<li>02/2024: Three papers and one tiny paper accepted at ICLR 2024.</li>
     			<li>11/2023: I am promoted to lead the new Statistical Large Language Modeling group at the MIT-IBM AI Lab.</li>
     			<li>10/2023: Five papers accepted at NeurIPS 2023 Workshops, including one oral!</li>
     			<li>10/2023: Two new <a href="#two">preprints</a> on solving NLP tasks by fusing/routing smaller LLMs (<a href="https://arxiv.org/abs/2309.15789">one</a>, <a href="https://arxiv.org/abs/2310.01542">two</a>).</li>
@@ -114,9 +116,9 @@ I have also worked on OOD generalization, Algorithmic Fairness, Optimal Transpor
     			<li>04/2023: One paper accepted at ICML 2023 &#127796;.</li>
     			<li>02/2023: AI Fairness through Robustness Tutorial @ AAAI 2023, February 7th at 8:30 AM EST (slides and more on our <a href="https://sites.google.com/view/aaai-2023-fairness-robustness">website</a>).
     			<li>01/2023: Three papers accepted at ICLR 2023 and one at CHI 2023.</li>
-    			<li>10/2022: Our tutorial on AI Fairness through Robustness was accepted for presentation at <a href="https://aaai.org/Conferences/AAAI-23/aaai23tutorials/">AAAI 2023</a>!</li>
+    			<!-- <li>10/2022: Our tutorial on AI Fairness through Robustness was accepted for presentation at <a href="https://aaai.org/Conferences/AAAI-23/aaai23tutorials/">AAAI 2023</a>!</li> -->
     			<li>10/2022: I am co-presenting a tutorial on Fairness of Machine Learning in Search Engines at <a href="https://www.cikm2022.org/tutorials">CIKM 2022</a> (<a href="files/MY_slides_cikm.pdf">slides</a>).</li>
-    			<li>09/2022: Two papers accepted at NeurIPS 2022, including one oral!</li>
+    			<!-- <li>09/2022: Two papers accepted at NeurIPS 2022, including one oral!</li> -->
     			<!-- <li>09/2022: I will serve as a Project Advisor in the <a href="https://computing.mit.edu/about/diversity-equity-inclusion/break-through-tech-ai/">Break Through Tech AI (BTAI)</a> program at MIT.</li> -->
     			<li>07/2022: Our team has released <a href="https://github.com/IBM/inFairness/">inFairness</a> - the first open source Python library for Individual Fairness.<br>
     			Learn more about fairness in AI in our <a href="https://video.ibm.com/recorded/131932983">tutorial video</a> (<a href="files/MY_talk_tutorial.pdf">slides</a>). <!-- and tryout the <a href="https://fairbert.vizhub.ai/">Fairness Playground</a>! -->
@@ -148,11 +150,85 @@ I have also worked on OOD generalization, Algorithmic Fairness, Optimal Transpor
 			<h2 style="text-align: center">Publications</h2>
 			
 			<hr />
+            <h2 style="text-align: right">2024</h2>
+
+           <div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/tinybenchmarks.png" width="200" height="160" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2402.14992">tinyBenchmarks: evaluating LLMs with fewer examples</a></h4>
+					</header>
+					<p>Felipe Maia Polo, Lucas Weber, Leshem Choshen, Yuekai Sun, Gongjun Xu, Mikhail Yurochkin<br>
+					ICLR Workshop on Mathematical and Empirical Understanding of Foundation Models (ME-FoMo), 2024<br>
+					<a href="https://arxiv.org/pdf/2402.14992">arXiv</a> / <a href="https://github.com/felipemaiapolo/tinyBenchmarks">Code</a> / <a href="https://huggingface.co/tinyBenchmarks">Data</a> / <a href="https://twitter.com/felipemaiapolo/status/1765472691145085165">Twitter</a></p>
+				</div>
+			</div> 
+						            
+           <div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/foe.png" width="200" height="155" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2310.01542">Fusing Models with Complementary Expertise</a></h4>
+					</header>
+					<p>Hongyi Wang, Felipe Maia Polo, Yuekai Sun, Souvik Kundu, Eric Xing, Mikhail Yurochkin<br>
+					International Conference on Learning Representations (ICLR), 2024<br>
+					NeurIPS Workshop on Distribution Shifts (DistShift), 2023<br>
+					<a href="https://arxiv.org/pdf/2310.01542">arXiv</a></p>
+				</div>
+			</div> 
+
+           <div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/aligners.png" width="180" height="130" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2403.04224">Aligners: Decoupling LLMs and Alignment</a></h4>
+					</header>
+					<p>Lilian Ngweta, Mayank Agarwal, Subha Maity, Alex Gittens, Yuekai Sun, Mikhail Yurochkin<br>
+					Tiny Papers at the International Conference on Learning Representations (ICLR), 2024 <span style="font-weight: bold; color: #f24900">(Notable)</span><br>
+					<a href="https://arxiv.org/pdf/2403.04224">arXiv</a></p>
+				</div>
+			</div>
+
+           <div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/stereotyping.png" width="220" height="140" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2310.01583">An Investigation of Representation and Allocation Harms in Contrastive Learning</a></h4>
+					</header>
+					<p>Subha Maity, Mayank Agarwal, Mikhail Yurochkin, Yuekai Sun<br>
+					International Conference on Learning Representations (ICLR), 2024<br>
+					<a href="https://arxiv.org/pdf/2310.01583">arXiv</a> / <a href="https://github.com/smaityumich/CL-representation-harm">Code</a></p>
+				</div>
+			</div> 
+						            
+           <div class="row 200%">
+				<div class="3u 4u(large) 12u$(medium)">
+					<div class="image"><img src="images/dist-prop.png" width="200" height="155" alt="" style="border:none;" /></div>
+				</div>
+				<div class="9u$ 8u$(large) 12u$(medium)">
+					<header>
+						<h4><a href="https://arxiv.org/abs/2402.08324">Uncertainty Quantification via Stable Distribution Propagation</a></h4>
+					</header>
+					<p>Felix Petersen, Aashwin Ananda Mishra, Hilde Kuehne, Christian Borgelt, Oliver Deussen, Mikhail Yurochkin<br>
+					International Conference on Learning Representations (ICLR), 2024<br>
+					<a href="https://arxiv.org/pdf/2402.08324">arXiv</a> / <a href="https://github.com/Felix-Petersen/distprop">Code</a></p>
+				</div>
+			</div>            
+			
+			<hr />
             <h2 style="text-align: right">2023</h2>
             
            <div class="row 200%">
 				<div class="3u 4u(large) 12u$(medium)">
-					<div class="image"><img src="images/llmrouting.png" width="270" height="180" alt="" style="border:none;" /></div>
+					<div class="image"><img src="images/llmrouting.png" width="220" height="150" alt="" style="border:none;" /></div>
 				</div>
 				<div class="9u$ 8u$(large) 12u$(medium)">
 					<header>
@@ -160,21 +236,7 @@ I have also worked on OOD generalization, Algorithmic Fairness, Optimal Transpor
 					</header>
 					<p>Tal Shnitzer, Anthony Ou, Mírian Silva, Kate Soule, Yuekai Sun, Justin Solomon, Neil Thompson, Mikhail Yurochkin<br>
 					NeurIPS Workshop on Distribution Shifts (DistShift), 2023 <span style="font-weight: bold; color: #f24900">(Oral)</span><br>
-					<a href="https://browse.arxiv.org/pdf/2309.15789.pdf">arXiv</a></p>
-				</div>
-			</div>
-
-           <div class="row 200%">
-				<div class="3u 4u(large) 12u$(medium)">
-					<div class="image"><img src="images/foe.png" width="200" height="150" alt="" style="border:none;" /></div>
-				</div>
-				<div class="9u$ 8u$(large) 12u$(medium)">
-					<header>
-						<h4><a href="https://arxiv.org/abs/2310.01542">Fusing Models with Complementary Expertise</a></h4>
-					</header>
-					<p>Hongyi Wang, Felipe Maia Polo, Yuekai Sun, Souvik Kundu, Eric Xing, Mikhail Yurochkin<br>
-					NeurIPS Workshop on Distribution Shifts (DistShift), 2023<br>
-					<a href="https://browse.arxiv.org/pdf/2310.01542.pdf">arXiv</a></p>
+					<a href="https://arxiv.org/pdf/2309.15789">arXiv</a> / <a href="https://openreview.net/forum?id=LyNsMNNLjY">Code (see supplementary material)</a> </p>
 				</div>
 			</div>
 
